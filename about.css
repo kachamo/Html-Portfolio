@@ -74,9 +74,10 @@ a{
     width: 7%;
     height: 300px;
     border-right: 3px solid var(--color-black);
-    padding: 0;
     position: absolute;
     left: 0;
+    top: 0;
+    bottom: 0;
 }
 
 .social-links{
@@ -97,60 +98,6 @@ a{
     transform: scale(1.1);
     transition: 0.2s;
 
-}
-
-
-.hero-content{
-    max-width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5% 0;
-    padding: 0 30px;
-}
-.title {
-    font-family: 'Black Han Sans', sans-serif;
-    margin-bottom: 7px;
-    font-size: 7rem;
-    font-weight: 900;
-    color: var(--color-primary);
-    margin-right: 100px;
-}
-.title span{
-    display: block;
-    color: var(--color-secondary);
-}
-
-
-.profile{
-    display: flex;
-    flex-direction: column;
-    align-items: self-start;
-    justify-content: center;
-    width: 90ch;
-   
-}
-.profile .hello{
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: var(--color-secondary);
-
-}
-.profile .name{
-    font-family: sans-serif;
-    margin: 20px 0;
-    font-size: 3rem;
-    color: var(--color-primary); 
-    letter-spacing: 0.5em;
-    padding: 0;
-}
-.profile .hero-info{
-    max-width: 600px;
-    font-size: 1.6rem;
-    line-height: 1.6;
-    text-align: justify;
-    color: var(--color-secondary);
-    margin-bottom: 25px;
 }
 
 
@@ -205,68 +152,16 @@ a{
 /* <===========SKILL'S ICONS==========> */
 
 
-.skill-icons{
-    height: 210px;
-    width: 100vw;
-    background-color: var(--color-black);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -6%;
-}
-.sprite{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-.sprite img{ 
-   padding: 0 10px;
-   height: 200px;
-   cursor: pointer;
-   z-index: 1;
-}
-.sprite img:hover{ 
-    transform: scale(1.05);
-    transition: 0.2s ;    
-}
-.shadow{
-    content: "";
-    width: 180px;
-    height: 2px;
-    background-color: transparent;
-    position: relative;
-    top: -5px;
-    transition: 0.2s;
-}
-.sprite img:hover + .html{
-    box-shadow: 0px 10px 20px 10px #ff5e00;
-}
-.sprite img:hover + .css{
-    box-shadow: 0px 10px 20px 10px #0167c7;
-}
-.sprite img:hover + .javascript{
-    box-shadow: 0px 10px 20px 10px #ffd000;
-}
-.sprite img:hover + .react{
-    box-shadow: 0px 10px 20px 10px #00eeff;
-}
-.sprite img:hover + .mysql{
-    box-shadow: 0px 10px 20px 10px #4b7092;
-}
-.sprite img:hover + .python{
-    
-    box-shadow: 0px 10px 20px 10px #d4ca01;
-}
-
-
-
 footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 40px;
     font-size: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--color-primary);
+
 }

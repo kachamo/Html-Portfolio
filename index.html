@@ -4,35 +4,105 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
   </head>
   <body>
     <div class="container">
-      <nav>
-        <a href="/">Kachamo Lankamo</a>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Exprience</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+      <nav class="nav_bar">
+        <a href="/" class="logo">Kac.</a>
+        <ul class="nav_menu">
+          <li class="nav_list"><a href="./home.html">Home</a></li>
+          <li class="nav_list"><a href="./about.html">About</a></li>
+          <li class="nav_list"><a href="#">Projects</a></li>
+          <li class="nav_list"><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <div class="image">
-        <img src="./profile.jpg" alt="" />
+      <div class="main-container">
+        <section class="side-bar">
+          <div class="social-links">
+            <img
+              src="./images/github.svg"
+              alt=""
+              class="icon"
+              onclick="window.open('https://github.com/kachamo')"
+            />
+            <img
+              src="./images/linkedin.svg"
+              alt=""
+              class="icon"
+              onclick="window.open('https://www.linkedin.com/in/kachamo-lankamo/')"
+            />
+
+            <img
+              src="./images/discord.svg"
+              alt=""
+              class="icon"
+              onclick="window.open('https://discord.com/invite/#9800')"
+            />
+          </div>
+        </section>
+        <section class="hero-content">
+          <section class="title">FRONT-END <span>DEVELOPER</span></section>
+          <section class="profile">
+            <span class="hello">Hello, I'm</span>
+            <p class="name">Kachamo Lankamo</p>
+            <p class="hero-info">
+              I am passionate about creating attractive and functional websites.
+              I am proficient in HTML, CSS, JavaScript, and React. I am
+              committed to producing responsive and user-friendly designs. If
+              you're seeking a developer who appreciates creativity,
+              cooperation, and attention to detail, let's collaborate to make
+              your online presence shine.
+            </p>
+            <div class="infoLink">
+              <button
+                class="btn btn--outline"
+                onclick="window.open('/images/CV.pdf','_blank');return false;"
+              >
+                Download CV
+              </button>
+              <button class="btn btn--primary">Contact Info</button>
+            </div>
+          </section>
+        </section>
       </div>
-      <div class="content">
-        <span>Hello, I'm</span>
-        <p>Kachamo Lankamo</p>
-        <p>Frontend Developer</p>
-        <div class="infoLink">
-          <button class="btn btn__outline">Download CV</button>
-          <button class="btn btn__primary">Contact Info</button>
+
+      <div class="skill-icons">
+        <div class="sprite">
+          <img src="./images/html.png" alt="" />
+          <span class="html shadow"></span>
         </div>
-        <div class="socialLinks">
-          <span></span>
-          <span></span>
+        <div class="sprite">
+          <img src="./images/css.png" alt="" />
+          <span class="css shadow"></span>
+        </div>
+        <div class="sprite">
+          <img src="./images/javascript.png" alt="" />
+          <span class="javascript shadow"></span>
+        </div>
+        <div class="sprite">
+          <img src="./images/react.png" alt="" />
+          <span class="react shadow"></span>
+        </div>
+        <div class="sprite">
+          <img src="./images/mysql.png" alt="" />
+          <span class="mysql shadow"></span>
+        </div>
+        <div class="sprite">
+          <img src="./images/python.png" alt="" />
+          <span class="python shadow"></span>
         </div>
       </div>
     </div>
+    <footer>©2023</footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
