@@ -100,7 +100,32 @@ a{
 
 }
 
+/* <===========ABOUT ME==========> */
 
+.hero-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-me{
+    width: 80ch;
+    
+}
+.about-me h1{
+    font-size: 3rem;
+}
+.about-me p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+}
 
 
 
