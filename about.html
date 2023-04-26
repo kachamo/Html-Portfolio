@@ -10,12 +10,12 @@
   <body>
     <div class="container">
       <nav class="nav_bar">
-        <a href="/" class="logo">Kac.</a>
+        <a href="./index.html" class="logo">Kac.</a>
         <ul class="nav_menu">
           <li class="nav_list"><a href="./index.html">Home</a></li>
           <li class="nav_list"><a href="./about.html">About</a></li>
-          <li class="nav_list"><a href="#">Projects</a></li>
-          <li class="nav_list"><a href="#">Contact</a></li>
+          <li class="nav_list"><a href="./projects.html">Projects</a></li>
+          <li class="nav_list"><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
       <div class="main-container">
@@ -42,33 +42,43 @@
             />
           </div>
         </section>
+        <div class="bold-title">ABOUT</div>
         <section class="hero-content">
+          <section class="myImg">
+            <img src="./images/myImage.png" alt="" />
+          </section>
           <section class="about-me">
-            <h1>About Me</h1>
             <p>
-              I am a front-end web developer with a background in architecture.
-              I worked in architecture for two years after graduating, but I
-              discovered my passion for web development while in school. Since
-              then, I have been honing my skills as a developer, and I have
-              worked as a freelancer on platforms like Upwork and
-              Freelancer.com, where I gained experience as a graphic designer
-              and web developer. I am proficient in HTML, CSS, and JavaScript,
-              and I have also taken courses in MySQL and Python (though not
-              Django). I am currently practicing React JS and building my skills
-              in this area. I am dedicated to creating engaging and
-              user-friendly websites and applications that provide exceptional
-              experiences for users.
+              I am a front-end web developer with a background in Architectural
+              Design. I worked in Architectural Design for two years after
+              graduating, but I discovered my passion for web development while
+              in school. Since then, I have been honing my skills as a
+              developer, and I have worked as a freelancer on platforms like
+              Upwork and Freelancer.com, where I gained experience as a graphic
+              designer and web developer. I am proficient in HTML, CSS, and
+              JavaScript, and I have also taken courses in MySQL and Python
+              (though not Django). I am currently practicing React JS and
+              building my skills in this area. I am dedicated to creating
+              engaging and user-friendly websites and applications that provide
+              exceptional experiences for users.
             </p>
+            <button
+              class="btn btn--outline"
+              onclick="window.open('/images/CV.pdf','_blank');return false;"
+            >
+              Download CV
+            </button>
           </section>
           <section class="skills">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>React</span>
-            <span>MySQL</span>
-            <span>Python</span>
-            <span>Photoshop</span>
-            <span>Illustrator</span>
+            <h1 class="head-title">SKILLS</h1>
+            <div class="skill-img">
+              <img src="./images/html.svg" alt="" class="btn--circular" />
+              <img src="./images/css.svg" alt="" class="btn--circular" />
+              <img src="./images/javascript.svg" alt="" class="btn--circular" />
+              <img src="./images/react.svg" alt="" class="btn--circular" />
+              <img src="./images/mySQL.svg" alt="" class="btn--circular" />
+              <img src="./images/python.svg" alt="" class="btn--circular" />
+            </div>
           </section>
         </section>
       </div>

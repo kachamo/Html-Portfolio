@@ -56,6 +56,30 @@ a{
     font-family: 'Black Han Sans', sans-serif;
     font-size: 2rem;
 }
+.nav_list a:hover{
+    color: var(--color-green);
+}
+
+/* <===========TITLE==========> */
+
+.bold-title{
+    font-family: 'Black Han Sans', sans-serif;
+    transform: rotate(-90deg);
+    font-size: 25vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 12%;
+    color: var(--color-black);
+    opacity: 0.2;
+    z-index: -1;
+    overflow: hidden;
+    user-select: none;
+}
+
+
+
+
 
 /* <===========Hero==========> */
 
@@ -64,6 +88,8 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+    height: 550px;
     margin-bottom: 4%;
 }
 
@@ -118,7 +144,7 @@ a{
 }
 .title span{
     display: block;
-    color: var(--color-secondary);
+    color: var(--color-black);
 }
 
 
@@ -206,13 +232,14 @@ a{
 
 
 .skill-icons{
-    height: 210px;
+    height: 160px;
     width: 100vw;
     background-color: var(--color-black);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -6%;
+    margin-top: -5%;
+    opacity: 0.5;
 }
 .sprite{
     display: flex;
@@ -223,7 +250,7 @@ a{
 }
 .sprite img{ 
    padding: 0 10px;
-   height: 200px;
+   height: 150px;
    cursor: pointer;
    z-index: 1;
 }
@@ -233,7 +260,7 @@ a{
 }
 .shadow{
     content: "";
-    width: 180px;
+    width: 130px;
     height: 2px;
     background-color: transparent;
     position: relative;
@@ -263,10 +290,15 @@ a{
 
 
 footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 40px;
     font-size: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--color-primary);
+
 }

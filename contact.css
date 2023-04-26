@@ -56,9 +56,6 @@ a{
     font-family: 'Black Han Sans', sans-serif;
     font-size: 2rem;
 }
-.nav_list a:hover{
-    color: var(--color-red);
-}
 
 /* <===========Hero==========> */
 
@@ -109,7 +106,7 @@ a{
 .bold-title{
     font-family: 'Black Han Sans', sans-serif;
     transform: rotate(-90deg);
-    font-size: 25vh;
+    font-size: 20vh;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -133,7 +130,7 @@ a{
 .myImg img{
     width: 300px;
     position: relative;
-    top: 70px;
+    top: 100px;
     left: -100px;
 }
 .about-me{
@@ -151,18 +148,18 @@ a{
 }
 .skills{
     width: 200px;
-    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 7%;
-    top: 15%;
+    right: 5%;
+    top: 0;
+    bottom: 0;
 
 }
 .head-title{
     font-family: 'Black Han Sans', sans-serif;
-    font-size: 5rem;
+    font-size: 3rem;
     color: var(--color-black);
     transform: rotate(-90deg);
     margin: 0;
