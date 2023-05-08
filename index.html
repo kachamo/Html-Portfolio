@@ -18,74 +18,226 @@
           <li class="nav_list"><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
-      <div class="main-container">
-        <section class="side-bar">
-          <div class="social-links">
-            <img
-              src="./images/github.svg"
-              alt=""
-              class="icon"
-              onclick="window.open('https://github.com/kachamo')"
-            />
-            <img
-              src="./images/linkedin.svg"
-              alt=""
-              class="icon"
-              onclick="window.open('https://www.linkedin.com/in/kachamo-lankamo/')"
-            />
-
-            <img
-              src="./images/discord.svg"
-              alt=""
-              class="icon"
-              onclick="window.open('https://discord.com/invite/#9800')"
-            />
+      <div class="content">
+        <div class="main-container">
+          <div class="side-bar">
+            <div class="social-links">
+              <img
+                src="./images/github.svg"
+                alt=""
+                class="icon"
+                onclick="window.open('https://github.com/kachamo')"
+              />
+              <img
+                src="./images/linkedin.svg"
+                alt=""
+                class="icon"
+                onclick="window.open('https://www.linkedin.com/in/kachamo-lankamo/')"
+              />
+              <img
+                src="./images/discord.svg"
+                alt=""
+                class="icon"
+                onclick="window.open('https://discord.com/invite/#9800')"
+              />
+            </div>
           </div>
-        </section>
-        <div class="bold-title">HOME</div>
-        <section class="hero-content">
-          <section class="title">FRONT-END <span>DEVELOPER</span></section>
-          <section class="profile">
-            <span class="hello">Hello, I'm</span>
-            <p class="name">Kachamo Lankamo</p>
-            <p class="hero-info">
-              I am passionate about creating attractive and functional websites.
-              I am proficient in HTML, CSS, JavaScript, and React. I am
-              committed to producing responsive and user-friendly designs. If
-              you're seeking a developer who appreciates creativity,
-              cooperation, and attention to detail, let's collaborate to make
-              your online presence shine.
-            </p>
-
-            <button class="btn btn--primary">Contact Info</button>
-          </section>
-        </section>
+          <div class="bold-title">HOME</div>
+          <div class="home-content">
+            <span class="title">FRONT-END <span>DEVELOPER</span></span>
+            <div class="profile">
+              <span class="hello">Hello, I'm</span>
+              <p class="name">Kachamo Lankamo</p>
+              <p class="hero-info">
+                I am passionate about creating attractive and functional
+                websites. I am proficient in HTML, CSS, JavaScript, and React. I
+                am committed to producing responsive and user-friendly designs.
+                If you're seeking a developer who appreciates creativity,
+                cooperation, and attention to detail, let's collaborate to make
+                your online presence shine.
+              </p>
+              <a href="./contact.html" class="btn btn--primary">Contact Info</a>
+            </div>
+          </div>
+        </div>
+        <div class="skill-icons">
+          <div class="sprite">
+            <img src="./images/html.png" alt="" />
+            <span class="red html shadow"></span>
+          </div>
+          <div class="sprite">
+            <img src="./images/css.png" alt="" />
+            <span class="red css shadow"></span>
+          </div>
+          <div class="sprite">
+            <img src="./images/javascript.png" alt="" />
+            <span class="red javascript shadow"></span>
+          </div>
+          <div class="sprite">
+            <img src="./images/react.png" alt="" />
+            <span class="red react shadow"></span>
+          </div>
+          <div class="sprite">
+            <img src="./images/mysql.png" alt="" />
+            <span class="red mysql shadow"></span>
+          </div>
+          <div class="sprite">
+            <img src="./images/python.png" alt="" />
+            <span class="red python shadow"></span>
+          </div>
+        </div>
       </div>
 
-      <div class="skill-icons">
-        <div class="sprite">
-          <img src="./images/html.png" alt="" />
-          <span class="html shadow"></span>
+      <div class="content">
+        <div class="main-container">
+          <div class="bold-title">ABOUT</div>
+          <div class="about-content">
+            <div class="myImg">
+              <img src="./images/myImage.png" alt="" />
+            </div>
+            <div class="about-me">
+              <p>
+                I am a front-end web developer with a background in
+                Architectural Design. I worked in Architectural Design for two
+                years after graduating, but I discovered my passion for web
+                development while in school. Since then, I have been honing my
+                skills as a developer, and I have worked as a freelancer on
+                platforms like Upwork and Freelancer.com, where I gained
+                experience as a graphic designer and web developer. I am
+                proficient in HTML, CSS, and JavaScript, and I have also taken
+                courses in MySQL and Python (though not Django). I am currently
+                practicing React JS and building my skills in this area. I am
+                dedicated to creating engaging and user-friendly websites and
+                applications that provide exceptional experiences for users.
+              </p>
+              <button
+                class="btn btn--outline"
+                onclick="window.open('/images/CV.pdf','_blank');return false;"
+              >
+                Download CV
+              </button>
+            </div>
+            <div class="skills">
+              <h1 class="head-title">SKILLS</h1>
+              <div class="skill-img">
+                <img src="./images/html.svg" alt="" class="btn--circular" />
+                <img src="./images/css.svg" alt="" class="btn--circular" />
+                <img
+                  src="./images/javascript.svg"
+                  alt=""
+                  class="btn--circular"
+                />
+                <img src="./images/react.svg" alt="" class="btn--circular" />
+                <img src="./images/mySQL.svg" alt="" class="btn--circular" />
+                <img src="./images/python.svg" alt="" class="btn--circular" />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="sprite">
-          <img src="./images/css.png" alt="" />
-          <span class="css shadow"></span>
+      </div>
+      <div class="content">
+        <div class="main-container">
+        <div class="bold-title">PROJECTS</div>
+        <section class="hero-content">
+          <div class="project-grid">
+            <div class="project">
+              <img src="images/project-1.JPG" alt="Project 1 Image" 
+              onclick="window.open('https://car-store01.netlify.app/')"/>
+              <h3>Project 1 Title</h3>
+              <p>Project 1 description goes here.</p>
+              <a href="#">View project</a>
+            </div>
+
+            <div class="project">
+              <img src="images/project-2.JPG" alt="Project 2 Image" 
+              onclick="window.open('https://skateboard01.netlify.app/')"/>
+              <h3>Project 2 Title</h3>
+              <p>Project 2 description goes here.</p>
+              
+                >View project</a
+              >
+            </div>
+
+            <div class="project">
+              <img src="images/project-3.JPG" alt="Project 3 Image"  
+              onclick="window.open('https://bike-store01.netlify.app')"/>
+              <h3>Project 3 Title</h3>
+              <p>Project 3 description goes here.</p>
+              <a href="#">View project</a>
+            </div>
+
+            <div class="project">
+              <img src="images/project-4.jpg" alt="Project 4 Image" 
+              onclick="window.open('https://visit-italy01.netlify.app/ ')"/>
+              <h3>Project 4 Title</h3>
+              <p>Project 4 description goes here.</p>
+              <a href="#">View project</a>
+            </div>
+
+            <div class="project">
+              <img src="images/project-5.jpg" alt="Project 5 Image" 
+              onclick="window.open('https://snazzy-manatee-91b112.netlify.app/')"/>/>
+              <h3>Project 5 Title</h3>
+              <p>Project 5 description goes here.</p>
+              <a href="#">View project</a>
+            </div>
+
+            <div class="project">
+              <img src="images/project-6.jpg" alt="Project 6 Image" 
+              onclick="window.open('https://furniture-store01.netlify.app/ ')"/>
+              <h3>Project 6 Title</h3>
+              <p>Project 6 description goes here.</p>
+              <a href="#">View project</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
         </div>
-        <div class="sprite">
-          <img src="./images/javascript.png" alt="" />
-          <span class="javascript shadow"></span>
-        </div>
-        <div class="sprite">
-          <img src="./images/react.png" alt="" />
-          <span class="react shadow"></span>
-        </div>
-        <div class="sprite">
-          <img src="./images/mysql.png" alt="" />
-          <span class="mysql shadow"></span>
-        </div>
-        <div class="sprite">
-          <img src="./images/python.png" alt="" />
-          <span class="python shadow"></span>
+      </div>
+
+      <div class="content">
+        <div class="main-container">
+          <div class="bold-title">CONTACT</div>
+          <div class="contact-content">
+            <div class="contactPage">
+              <h1>Contact Us</h1>
+              <p>
+                Feel free to contact us any time. We will get back to you as
+                soon as we can!
+              </p>
+              <form>
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Your Name"
+                />
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your email"
+                />
+                <label for="message">Message:</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Your Message"
+                  rows="6"
+                ></textarea>
+                <div class="submit_btn">
+                  <input
+                    type="submit"
+                    value="Send Message"
+                    class="btn btn--primary"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
