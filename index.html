@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Home</title>
+    <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
   </head>
   <body>
     <nav class="nav_bar">
@@ -276,6 +277,30 @@
       </div>
     </div>
     <footer>©2023</footer>
+    <script type="text/javascript">
+      function sendEmail(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        emailjs
+          .send("service_dxme1cf", "template_24fd43l", {
+            name: name,
+            email: email,
+            message: message,
+          })
+          .then(
+            function (response) {
+              console.log("Email sent successfully", response);
+            },
+            function (error) {
+              console.log("Email failed to send", error);
+            }
+          );
+      }
+    </script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
