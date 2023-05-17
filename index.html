@@ -294,14 +294,13 @@
             email: email,
             message: message,
           })
-          .then(
-            function (response) {
-              console.log("Email sent successfully", response);
-            },
-            function (error) {
-              console.log("Email failed to send", error);
-            }
-          );
+          .then(function (response) {
+            console.log("Email sent successfully", response);
+            location.reload(); // Refresh the page
+          })
+          .catch(function (error) {
+            console.log("Email failed to send", error);
+          });
       }
     </script>
     <script
