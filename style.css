@@ -48,6 +48,7 @@ a{
     user-select: none;
     position: fixed;
     width: 90vw;
+    z-index: 999;
 }
 .nav_menu{
     display: flex;
@@ -70,15 +71,18 @@ a{
 .bold-title{
     font-family: 'Black Han Sans', sans-serif;
     transform: rotate(-90deg);
-    font-size: 10rem;
-    position: relative;
-    top: 100px;
-    bottom: 0;
-    left: 0;
+    margin-top: 5%;
+    font-size: 12rem;
     color: var(--color-black);
     opacity: 0.2;
     z-index: -100;
     user-select: none;
+}
+.bold-title-child:nth-last-of-type(){
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    left: 0;
 }
 
 
@@ -108,6 +112,7 @@ a{
     border-right: 3px solid var(--color-black);
     padding: 0;
     position: fixed;
+    top: 30%;
     left: 0;
 }
 
@@ -226,9 +231,11 @@ a{
     width: 100%;
     display: inline-block;
 }
-.btn--circular{
+.btn--circle{
     width: 80px;
     height: 80px;
+}
+.btn--circular{
     border-radius: 100%;
     color: var(--color-black);
     border: 5px solid transparent;
@@ -340,24 +347,23 @@ footer{
 .about-content{
     scroll-snap-align: start;
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100vw;
+    margin-top: 10%;
 }
-.myImg img{
+/* .myImg img{
     width: 300px;
     position: relative;
     top: 70px;
     left: -100px;
-}
+} */
 .about-me{
-    width: 80ch;
-    position: relative;
-    top: 100px;
-
+    margin-right: 15%;
+    margin-top: 12%;
 }
 
 .about-me p{
+    width: 50ch;
     font-size: 1.6rem;
     line-height: 1.5;
     text-align: justify;
@@ -387,28 +393,24 @@ footer{
 }
 
 
-.project-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    left: -200px;
-    top: 100px;
-}
+
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-gap: 50px 20px;
 }
 
 .project {
-border: 1px solid #ccc;
-padding: 5px;
-cursor: pointer;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .project img{
-    width: 300px;
+    width: 500px;
+    border-radius: 20px;
     object-fit: contain;
 }
 .contact-content{
@@ -433,9 +435,38 @@ cursor: pointer;
     padding: 10px 40px;
 }
 
+.project-view{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    display: none;
+}
+.project-view img{
+    width: 40px;
+    margin-left: 30px;
+}
+.project-view h1{
+    font-size: 25px;
+    color: var(--color-red);
+}
+.project img:hover{
+    opacity: 0.5;
+}
+.project img:hover + .project-view{
+    display: flex;
+    z-index: 1000;
+    
+}
+
 
 /* <===========FOrm==========> */
 
+
+.contact-container{
+    margin-top: 300px;
+}
 .contactPage{
     max-width: 400px;
     width: 90%;
