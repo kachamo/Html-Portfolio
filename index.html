@@ -20,6 +20,11 @@
         <li class="nav_list"><a href="#projects">Projects</a></li>
         <li class="nav_list"><a href="#contact">Contact</a></li>
       </ul>
+      <div class="burger" onclick="toggleMenu()">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+      </div>
     </nav>
     <div class="content">
       <div class="main-container">
@@ -358,6 +363,12 @@
       </div>
       <span>©2023 Kac. All rights reserved</span>
     </footer>
+    <script>
+      const navList = document.querySelector(".nav_menu");
+      function toggleMenu() {
+        navList.classList.toggle("opened");
+      }
+    </script>
     <script type="text/javascript">
       function sendEmail(event) {
         event.preventDefault();
