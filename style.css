@@ -366,8 +366,20 @@ footer{
 .about-me{
     margin-right: 15%;
     margin-top: 12%;
+    background-color: #3d3d3d5b;
+    height: 100%;
+    padding: 240px 40px;
 }
-
+.about-me-bg{
+    background-color: #3d3d3d5b;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.about-me .head-title{
+    display: none;
+}
 .about-me p{
     width: 50ch;
     font-size: 1.6rem;
@@ -418,6 +430,9 @@ footer{
     width: 500px;
     border-radius: 20px;
     object-fit: contain;
+}
+.project-container .head-title{
+    display: none;
 }
 .contact-content{
     display: flex;
@@ -470,9 +485,9 @@ footer{
 /* <===========FOrm==========> */
 
 
-.contact-container{
+/* .contact-container{
     margin-top: 300px;
-}
+} */
 .contactPage{
     max-width: 400px;
     width: 90%;
@@ -548,6 +563,7 @@ input:focus, textarea:focus{
     .bold-title{
         display: none;
     }
+    
     .skill-icons{
         margin-top: -30%;
         height: 80px;
@@ -566,8 +582,15 @@ input:focus, textarea:focus{
     }
     .about-me{
         margin-right: 0;
-        margin-top: 15%;
+        margin-top: 50%;
         text-align: center;
+        background-color: transparent;
+        height: 100%;
+        padding: 0;
+    }
+    .about-me .head-title{
+        display: block;
+        margin: 10px;
     }
     .about-me p{
         width: 40ch;
@@ -596,9 +619,32 @@ input:focus, textarea:focus{
         width: 50px;
         height: 50px;
     }
-    
+    .project img{
+        width: 400px;
     }
-  
+    .project-grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+    }
+    #projects{
+        margin-top: 200px;
+    }
+    .project-container .head-title{
+        text-align: center;
+        display: block;
+        margin: 10px;
+    }
+    .content{
+        margin-top: 50px;
+        height: max-content;
+    }
+    .contact-container{
+        margin-top: 150px;
+    }
+    .side-bar{
+        display: none;
+    }
+    }
 @media (min-width: 481px) and (max-width: 768px) {
   /* Styles for tablets */
   .main-container{
@@ -634,6 +680,7 @@ input:focus, textarea:focus{
 .bold-title{
     display: none;
 }
+
 .skill-icons{
     margin-top: -30%;
     height: 80px;
@@ -652,8 +699,15 @@ input:focus, textarea:focus{
 }
 .about-me{
     margin-right: 0;
-    margin-top: 15%;
+    margin-top: 50%;
     text-align: center;
+    background-color: transparent;
+    height: 100%;
+    padding: 0;
+}
+.about-me .head-title{
+    display: block;
+    margin: 10px;
 }
 .about-me p{
     width: 40ch;
@@ -682,7 +736,31 @@ input:focus, textarea:focus{
     width: 50px;
     height: 50px;
 }
-
+.project img{
+    width: 400px;
+}
+.project-grid{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+}
+#projects{
+    margin-top: 200px;
+}
+.project-container .head-title{
+    text-align: center;
+    display: block;
+    margin: 10px;
+}
+.content{
+    margin-top: 50px;
+    height: max-content;
+}
+.contact-container{
+    margin-top: 150px;
+}
+.side-bar{
+    display: none;
+}
 }
 @media (min-width: 769px) {
     /* Styles for desktops and laptops */
