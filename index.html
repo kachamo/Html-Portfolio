@@ -284,9 +284,13 @@
       function sendEmail(event) {
         event.preventDefault();
 
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const message = document.getElementById("message").value;
+        const nameInput = document.getElementById("name");
+        const emailInput = document.getElementById("email");
+        const messageInput = document.getElementById("message");
+
+        const name = nameInput.value;
+        const email = emailInput.value;
+        const message = messageInput.value;
 
         emailjs
           .send("service_dxme1cf", "template_24fd43l", {
@@ -296,6 +300,9 @@
           })
           .then(function (response) {
             console.log("Email sent successfully", response);
+            nameInput.value = ""; // Clear the name input field
+            emailInput.value = ""; // Clear the email input field
+            messageInput.value = ""; // Clear the message input field
             location.reload(); // Refresh the page
           })
           .catch(function (error) {
