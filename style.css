@@ -78,7 +78,9 @@ a{
     height: 2.5px;
     width: 25px;
 }
-
+.bar-circle{
+    background-color: #b52d24;
+}
 .opened{
     visibility: visible;
     padding: 5px 10px;
@@ -549,7 +551,10 @@ input:focus, textarea:focus{
 
 @media (max-width: 480px) {
     /* Styles for mobile devices */
-    .nav_bar{
+    body{
+        overflow-x: hidden;
+    }
+      .nav_bar{
         position: absolute;
         top: 20px;
     }
@@ -566,6 +571,7 @@ input:focus, textarea:focus{
         position: relative;
         right: -100px;
     }
+    
     .opened li{
         padding:  10px;
         margin: 5px 0;
@@ -616,15 +622,16 @@ input:focus, textarea:focus{
     
     .skill-icons{
         margin-top: -30%;
-        height: 80px;
+        height: 140px;
     }
     .sprite{
         display: block;
         margin: 0 4px;
     }
     .sprite img{
-        height: 70px;
+        height: 120px;
         padding: 0;
+    
     }
     
     .about-content{
@@ -697,7 +704,9 @@ input:focus, textarea:focus{
     }
 @media (min-width: 481px) and (max-width: 768px) {
   /* Styles for tablets */
-
+body{
+    overflow-x: hidden;
+}
   .nav_bar{
     position: absolute;
     top: 20px;
@@ -715,6 +724,7 @@ input:focus, textarea:focus{
     position: relative;
     right: -100px;
 }
+
 .opened li{
     padding:  10px;
     margin: 5px 0;
@@ -765,15 +775,16 @@ input:focus, textarea:focus{
 
 .skill-icons{
     margin-top: -30%;
-    height: 80px;
+    height: 140px;
 }
 .sprite{
     display: block;
     margin: 0 4px;
 }
 .sprite img{
-    height: 70px;
+    height: 120px;
     padding: 0;
+
 }
 
 .about-content{
