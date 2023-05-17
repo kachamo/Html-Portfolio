@@ -221,14 +221,15 @@
       <div class="bold-title bold-title-child">CONTACT</div>
       <div class="contact-content">
         <div class="contactPage">
-          <h1>Contact</h1>
+          <h1>Contact Us</h1>
           <p>
             Feel free to contact us any time. We will get back to you as soon as
             we can!
           </p>
-          <form>
+          <form onsubmit="sendEmail(event)">
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" placeholder="Your Name" />
+
             <label for="email">Email:</label>
             <input
               type="email"
@@ -236,6 +237,7 @@
               id="email"
               placeholder="Your email"
             />
+
             <label for="message">Message:</label>
             <textarea
               name="message"
@@ -243,6 +245,7 @@
               placeholder="Your Message"
               rows="6"
             ></textarea>
+
             <div class="submit_btn">
               <input
                 type="submit"
@@ -300,6 +303,15 @@
             }
           );
       }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("ONPl-joQ7BsPm7I_G");
+      })();
     </script>
     <script
       type="module"
