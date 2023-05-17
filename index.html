@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <title>Home</title>
     <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
@@ -102,17 +102,41 @@
           <div class="skills">
             <h1 class="head-title">SKILLS</h1>
             <div class="skill-img">
-              <img src="./images/html.svg" alt="" class="btn--circular" />
-              <img src="./images/css.svg" alt="" class="btn--circular" />
+              <img
+                src="./images/html.svg"
+                alt=""
+                class="btn--circular btn--circle"
+              />
+              <img
+                src="./images/css.svg"
+                alt=""
+                class="btn--circular btn--circle"
+              />
               <img
                 src="./images/javascript.svg"
                 alt=""
                 class="btn--circular btn--circle"
               />
-              <img src="./images/bootstrap.svg" alt="" class="btn--circular" />
-              <img src="./images/react.svg" alt="" class="btn--circular" />
-              <img src="./images/mySQL.svg" alt="" class="btn--circular" />
-              <img src="./images/python.svg" alt="" class="btn--circular" />
+              <img
+                src="./images/bootstrap.svg"
+                alt=""
+                class="btn--circular btn--circle"
+              />
+              <img
+                src="./images/react.svg"
+                alt=""
+                class="btn--circular btn--circle"
+              />
+              <img
+                src="./images/mySQL.svg"
+                alt=""
+                class="btn--circular btn--circle"
+              />
+              <img
+                src="./images/python.svg"
+                alt=""
+                class="btn--circular btn--circle"
+              />
             </div>
           </div>
         </div>
@@ -242,7 +266,9 @@
     </div>
 
     <div id="contact" class="contact-container">
-      <div class="bold-title bold-title-child">CONTACT</div>
+      <div class="bold-title bold-title-child" style="margin-bottom: 100px">
+        CONTACT
+      </div>
       <div class="contact-content">
         <div class="contactPage">
           <h1>Contact Us</h1>
@@ -282,7 +308,7 @@
       </div>
     </div>
     <div class="side-bar">
-      <div class="social-links">
+      <div class="social-links-side social-links">
         <img
           src="./images/github.svg"
           alt=""
@@ -303,7 +329,29 @@
         />
       </div>
     </div>
-    <footer>©2023</footer>
+    <footer>
+      <div class="social-links-footer social-links">
+        <img
+          src="./images/github.svg"
+          alt=""
+          class="icon"
+          onclick="window.open('https://github.com/kachamo')"
+        />
+        <img
+          src="./images/linkedin.svg"
+          alt=""
+          class="icon"
+          onclick="window.open('https://www.linkedin.com/in/kachamo-lankamo/')"
+        />
+        <img
+          src="./images/discord.svg"
+          alt=""
+          class="icon"
+          onclick="window.open('https://discord.com/invite/#9800')"
+        />
+      </div>
+      <span>©2023 Kac. All rights reserved</span>
+    </footer>
     <script type="text/javascript">
       function sendEmail(event) {
         event.preventDefault();

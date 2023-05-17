@@ -116,7 +116,7 @@ a{
     left: 0;
 }
 
-.social-links{
+.social-links-side{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,6 +127,11 @@ a{
     fill: var(--color-black);
     cursor: pointer;
     margin: 10px;
+}
+.social-links-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .icon:hover{
     box-shadow: 0px 0px 5px 2px var(--color-green);
@@ -315,16 +320,17 @@ a{
 
 
 footer{
-    position: fixed;
+    position: relative;
     bottom: 0;
-    left: 0;
-    right: 0;
-    height: 40px;
+    height: 100px;
     font-size: 1.2rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     color: var(--color-primary);
+    background-color: #3d3d3d38;
+    padding: 10px;
 
 }
 
@@ -507,3 +513,110 @@ input:focus, textarea:focus{
     margin-top: 20px;
 }
 
+@media (max-width: 480px) {
+    /* Styles for mobile devices */
+    .home-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .title{
+        font-size: 3rem;
+    }
+  }
+  
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Styles for tablets */
+  .main-container{
+    position: relative;
+
+    height: 100vh;
+    margin: 0;
+  }
+  .home-content{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    flex-direction: column;
+    margin: 0;
+    
+}
+.title{
+    font-size: 5rem;
+}
+.profile{
+    width: 60ch;
+    display: block;
+    text-align: left;
+}
+.profile .name{
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 20%;
+}
+.profile .hero-info{
+    display: none;
+}
+.bold-title{
+    display: none;
+}
+.skill-icons{
+    margin-top: -30%;
+    height: 80px;
+}
+.sprite{
+    display: block;
+    margin: 0 4px;
+}
+.sprite img{
+    height: 70px;
+    padding: 0;
+}
+
+.about-content{
+    flex-direction: column;
+}
+.about-me{
+    margin-right: 0;
+    margin-top: 15%;
+    text-align: center;
+}
+.about-me p{
+    width: 40ch;
+}
+.skills{
+    top: -70px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.skill-img{
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+}
+.skill-img img{
+    margin: 10px;
+    width: 80px;
+    height: 80px;
+}
+.head-title{
+    transform: rotate(0deg);
+    font-size: 2rem;
+}
+.btn--circle{
+    width: 50px;
+    height: 50px;
+}
+
+}
+@media (min-width: 769px) {
+    /* Styles for desktops and laptops */
+
+  }
+
+@media (min-width: 1201px) {
+/* Styles for large screens */
+}
+    
