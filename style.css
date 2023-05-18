@@ -484,6 +484,7 @@ footer{
     justify-content: center;
     width: 500px;
     display: none;
+    background-color: #202020;
 }
 .project-view img{
     width: 40px;
@@ -493,10 +494,11 @@ footer{
     font-size: 25px;
     color: var(--color-red);
 }
-.project img:hover{
-    opacity: 0.5;
+.project-view h1:hover{
+    text-shadow: 1px 1px 20px  var(--color-red);
+    transform: scale(1.1);
 }
-.project img:hover + .project-view{
+.project:hover > .project-view{
     display: flex;
     z-index: 1000;
     
@@ -695,6 +697,33 @@ input:focus, textarea:focus{
         display: block;
         margin: 10px;
     }
+    
+.project-view{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: none;
+    background-color: #202020;
+}
+.project-view img{
+    width: 40px;
+    margin-left: 30px;
+}
+.project-view h1{
+    font-size: 25px;
+    color: var(--color-red);
+}
+.project-view h1:hover{
+    text-shadow: 1px 1px 20px  var(--color-red);
+    transform: scale(1.1);
+}
+.project:hover > .project-view{
+    display: flex;
+    z-index: 1000;
+    
+}
     .content{
         margin-top: 50px;
         height: max-content;
@@ -852,6 +881,34 @@ body{
     display: block;
     margin: 10px;
 }
+
+.project-view{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: none;
+    background-color: #202020;
+}
+.project-view img{
+    width: 40px;
+    margin-left: 30px;
+}
+.project-view h1{
+    font-size: 25px;
+    color: var(--color-red);
+}
+.project-view h1:hover{
+    text-shadow: 1px 1px 20px  var(--color-red);
+    transform: scale(1.1);
+}
+.project:hover > .project-view{
+    display: flex;
+    z-index: 1000;
+    
+}
+
 .content{
     margin-top: 50px;
     height: max-content;
