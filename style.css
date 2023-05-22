@@ -549,6 +549,8 @@ input:focus, textarea:focus{
 }
 .submit_btn{
     margin-top: 20px;
+    width: 300px;
+    
 }
 
 @media (max-width: 480px) {
@@ -627,6 +629,7 @@ input:focus, textarea:focus{
     }
     
     .skill-icons{
+        overflow-x: hidden;
         margin-top: -30%;
         height: 140px;
     }
@@ -683,7 +686,7 @@ input:focus, textarea:focus{
         height: 50px;
     }
     .project img{
-        width: 400px;
+        max-width: 390px;
     }
     .project-grid{
         grid-template-columns: repeat(1, 1fr);
@@ -737,9 +740,8 @@ input:focus, textarea:focus{
     }
 @media (min-width: 481px) and (max-width: 768px) {
   /* Styles for tablets */
-body{
-    overflow-x: hidden;
-}
+
+  
   .nav_bar{
     position: fixed;
     top: 20px;
@@ -811,6 +813,7 @@ body{
 }
 
 .skill-icons{
+    overflow-x: hidden;
     margin-top: -30%;
     height: 140px;
 }
@@ -867,7 +870,7 @@ body{
     height: 50px;
 }
 .project img{
-    width: 400px;
+    max-width: 390px;
 }
 .project-grid{
     grid-template-columns: repeat(1, 1fr);
