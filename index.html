@@ -19,7 +19,6 @@
         <li class="nav_list"><a href="#about">About</a></li>
         <li class="nav_list"><a href="#projects">Projects</a></li>
         <li class="nav_list"><a href="#contact">Contact</a></li>
-        <div id="toggle-switch" class="btn--circular">Dark</div>
       </ul>
       <div class="burger" onclick="toggleMenu()">
         <span class="bar bar-1"></span>
@@ -33,7 +32,7 @@
         <div class="home-content">
           <span class="title">FRONT-END <span>DEVELOPER</span></span>
           <div class="profile">
-            <span class="hello">Hello, I am</span>
+            <span class="hello">Hello, I'm</span>
             <p class="name">Kachamo Lankamo</p>
             <p class="hero-info">
               I am passionate about creating attractive and functional websites.
@@ -363,46 +362,6 @@
       </div>
       <span>©2023 Kac. All rights reserved</span>
     </footer>
-
-    <script>
-      const toggleSwitch = document.getElementById("toggle-switch");
-      const root = document.documentElement;
-      let isDarkMode = false;
-
-      toggleSwitch.addEventListener("click", function () {
-        isDarkMode = !isDarkMode;
-        if (isDarkMode) {
-          enableDarkMode();
-        } else {
-          disableDarkMode();
-        }
-      });
-
-      function enableDarkMode() {
-        document.body.classList.add("dark-mode");
-        toggleSwitch.classList.add("dark-mode");
-        toggleSwitch.textContent = "Light";
-        root.style.setProperty("--color-primary", "#ffffff");
-        root.style.setProperty("--color-secondary", "#acacac");
-      }
-
-      function disableDarkMode() {
-        document.body.classList.remove("dark-mode");
-        toggleSwitch.classList.remove("dark-mode");
-        toggleSwitch.textContent = "Dark";
-        root.style.setProperty("--color-primary", "#3d3d3d");
-        root.style.setProperty("--color-secondary", "#3d3d3d");
-      }
-
-      const currentMode = localStorage.getItem("mode");
-      if (currentMode === "dark") {
-        isDarkMode = true;
-        enableDarkMode();
-      } else {
-        isDarkMode = false;
-        disableDarkMode();
-      }
-    </script>
     <script>
       const navList = document.querySelector(".nav_menu");
       const navBar = document.querySelector(".bar");
