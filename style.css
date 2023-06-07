@@ -60,7 +60,7 @@ a{
   }
   
   #toggle-switch.dark-mode input[type="radio"]:checked {
-    /* color: #fff; */
+    color: #fff;
   }
   
   #toggle-switch.dark-mode {
